@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Shopping List',
         home: ShoppingListScreen(),
+        debugShowCheckedModeBanner: false,
       ),
     ); 
   }

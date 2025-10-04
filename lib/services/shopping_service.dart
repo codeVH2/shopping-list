@@ -35,4 +35,9 @@ class ShoppingService extends ChangeNotifier {
 
     notifyListeners();
   }
+
+  void clearList() {  //clear the shopping list
+    _items.clear();
+    notifyListeners();
+  }
 }
