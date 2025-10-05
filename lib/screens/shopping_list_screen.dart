@@ -88,6 +88,7 @@ class ShoppingListScreen extends StatelessWidget {
                   item: shoppingService.items[index],
                   onToggle: () => shoppingService.togglePurchased(index),
                   onIncrease: () => shoppingService.increaseQuantity(index),
+                  onDecrease: () => shoppingService.decreaseQuantity(index),
                   onRemove: () => shoppingService.removeItem(index),
                 );
               }

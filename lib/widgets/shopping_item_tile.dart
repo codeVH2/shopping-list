@@ -5,12 +5,14 @@ class ShoppingItemTile extends StatelessWidget {
   final ShoppingItem item;
   final VoidCallback onToggle;
   final VoidCallback onIncrease;
+  final VoidCallback onDecrease;
   final VoidCallback onRemove;
 
   const ShoppingItemTile({
     required this.item,
     required this.onToggle,
     required this.onIncrease,
+    required this.onDecrease,
     required this.onRemove,
   });
 
@@ -39,6 +41,11 @@ class ShoppingItemTile extends StatelessWidget {
               onPressed: onIncrease,
               color: Colors.blue,
             ),
+            IconButton(
+              icon: Icon(Icons.remove),
+              onPressed: onDecrease,
+              color: Colors.blue,
+              ),
             IconButton(
               icon: Icon(Icons.delete),
               onPressed: onRemove,
